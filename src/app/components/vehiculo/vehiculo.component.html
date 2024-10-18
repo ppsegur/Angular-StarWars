@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Vehicle Name</th>
+              <th scope="col">Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Usamos @for para iterar sobre la lista de vehículos -->
+            @for(vehiculo of listVehiculos; track vehiculo.name) {
+            <tr>
+              <td>
+                <img [src]="vehiculo.url" class="flag-image" alt="{{ vehiculo.name }}" style="width: 30px; height: auto; margin-right: 5px;">
+                {{ vehiculo.name }}
+              </td>
+              <td>
+                Model: {{ vehiculo.model }}<br>
+                Manufacturer: {{ vehiculo.manufacturer }}<br>
+                Cost in credits: {{ vehiculo.cost_in_credits }}<br>
+                Length: {{ vehiculo.length }} meters<br>
+                <i class="bi bi-person"></i> Crew: {{ vehiculo.crew }}<br>
+                <i class="bi bi-people"></i> Passengers: {{ vehiculo.passengers }}<br>
+              </td>
+            </tr>
+            }
+            @empty {
+            <tr>
+              <td colspan="2">No se encontraron vehículos en la lista</td>
+            </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
