@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Character Name</th>
+              <th scope="col">Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Usamos *ngFor para iterar sobre la lista de personajes -->
+          @for(person of listPeople; track person.name) {
+              <td>
+                <img [src]="person.url" class="flag-image" alt="{{ person.name }}" style="width: 30px; height: auto; margin-right: 5px;">
+                {{ person.name }}
+              </td>
+              <td>
+                Birth Year: {{ person.birth_year }}<br>
+                Gender: {{ person.gender }}<br>
+                Height: {{ person.height }} cm<br>
+                Mass: {{ person.mass }} kg<br>
+                Hair Color: {{ person.hair_color }}<br>
+                Skin Color: {{ person.skin_color }}<br>
+                Eye Color: {{ person.eye_color }}<br>
+              </td>
+            
+            <tr *ngIf="listPeople.length === 0">
+              <td colspan="2">No se encontraron personajes en la lista</td>
+            </tr>}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  

@@ -7,11 +7,17 @@ import { VehiculoComponent } from './components/vehiculo/vehiculo.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { VehiculoService } from './services/vehiculo.service';
 import {  HttpClientModule } from '@angular/common/http';
+import { PeopleListComponent } from './components/people-list/people-list.component';
+import { MenuComponent } from './shared/menu/menu.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    VehiculoComponent
+    VehiculoComponent,
+    PeopleListComponent,
+    MenuComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +25,7 @@ import {  HttpClientModule } from '@angular/common/http';
     NgbModule,
     HttpClientModule,
   ],
-  providers: [VehiculoService],
+  providers: [VehiculoService, HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

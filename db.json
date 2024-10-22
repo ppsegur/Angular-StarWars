@@ -4,7 +4,7 @@
     "previous": null, 
     "listVehiculo": [
         {
-            "id" : 0,
+        
             "name": "Sand Crawler", 
             "model": "Digger Crawler", 
             "manufacturer": "Corellia Mining Corporation", 
@@ -26,7 +26,7 @@
             "url": "https://swapi.dev/api/vehicles/4/"
         }, 
         {
-            "id" : 1,
+          
             "name": "T-16 skyhopper", 
             "model": "T-16 skyhopper", 
             "manufacturer": "Incom Corporation", 
@@ -47,7 +47,7 @@
             "url": "https://swapi.dev/api/vehicles/6/"
         }, 
         {
-            "id" : 2,
+      
             "name": "X-34 landspeeder", 
             "model": "X-34 landspeeder", 
             "manufacturer": "SoroSuub Corporation", 
@@ -68,7 +68,7 @@
             "url": "https://swapi.dev/api/vehicles/7/"
         }, 
         {
-            "id" : 3,
+          
             "name": "TIE/LN starfighter", 
             "model": "Twin Ion Engine/Ln Starfighter", 
             "manufacturer": "Sienar Fleet Systems", 
@@ -90,8 +90,7 @@
             "edited": "2014-12-20T21:30:21.670000Z", 
             "url": "https://swapi.dev/api/vehicles/8/"
         }, 
-        {
-            "id" : 4,
+      {
             "name": "Snowspeeder", 
             "model": "t-47 airspeeder", 
             "manufacturer": "Incom corporation", 
@@ -115,7 +114,7 @@
             "url": "https://swapi.dev/api/vehicles/14/"
         }, 
         {
-            "id" : 5,
+            
             "name": "TIE bomber", 
             "model": "TIE/sa bomber", 
             "manufacturer": "Sienar Fleet Systems", 
@@ -137,7 +136,7 @@
             "url": "https://swapi.dev/api/vehicles/16/"
         }, 
         {
-            "id" : 6,
+      
             "name": "AT-AT", 
             "model": "All Terrain Armored Transport", 
             "manufacturer": "Kuat Drive Yards, Imperial Department of Military Research", 
@@ -159,7 +158,6 @@
             "url": "https://swapi.dev/api/vehicles/18/"
         }, 
         {
-            "id" : 7,
             "name": "AT-ST", 
             "model": "All Terrain Scout Transport", 
             "manufacturer": "Kuat Drive Yards, Imperial Department of Military Research", 
@@ -183,7 +181,7 @@
             "url": "https://swapi.dev/api/vehicles/19/"
         }, 
         {
-            "id" : 8,
+            
             "name": "Storm IV Twin-Pod cloud car", 
             "model": "Storm IV Twin-Pod", 
             "manufacturer": "Bespin Motors", 
@@ -204,7 +202,7 @@
             "url": "https://swapi.dev/api/vehicles/20/"
         }, 
         {
-            "id" : 9,
+          
             "name": "Sail barge", 
             "model": "Modified Luxury Sail Barge", 
             "manufacturer": "Ubrikkian Industries Custom Vehicle Division", 

@@ -17,4 +17,7 @@ export interface Vehiculo {
     edited: string
     url: string
   }
-  
+  export interface vehiculoResponse {
+    count: number;
+    results: Vehiculo[];
+  }
