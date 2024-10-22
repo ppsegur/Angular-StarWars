@@ -10,10 +10,10 @@
           </thead>
           <tbody>
             <!-- Usamos @for para iterar sobre la lista de vehículos -->
-            @for(vehiculo of listVehiculos; track vehiculo.name) {
+            @for(vehiculo of listVehiculos; track vehiculo.url.split('/')[5]) {
             <tr>
-              <td>
-                <img [src]="vehiculo.url" class="flag-image" alt="{{ vehiculo.name }}" style="width: 30px; height: auto; margin-right: 5px;">
+              <td style="width: 18rem;">
+                <img [src]="'https://starwars-visualguide.com/assets/img/vehicles/' + vehiculo.url.split('/')[vehiculo.url.split('/').length - 2] + '.jpg'" class="card-img-top ">
                 {{ vehiculo.name }}
               </td>
               <td>

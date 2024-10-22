@@ -1,36 +1,28 @@
 <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Character Name</th>
-              <th scope="col">Details</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Usamos *ngFor para iterar sobre la lista de personajes -->
-          @for(person of listPeople; track person.name) {
-              <td>
-                <img [src]="person.url" class="flag-image" alt="{{ person.name }}" style="width: 30px; height: auto; margin-right: 5px;">
-                {{ person.name }}
-              </td>
-              <td>
-                Birth Year: {{ person.birth_year }}<br>
-                Gender: {{ person.gender }}<br>
-                Height: {{ person.height }} cm<br>
-                Mass: {{ person.mass }} kg<br>
-                Hair Color: {{ person.hair_color }}<br>
-                Skin Color: {{ person.skin_color }}<br>
-                Eye Color: {{ person.eye_color }}<br>
-              </td>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8">
+      <div class="row">
+        <!-- Usamos *ngFor para iterar sobre la lista de personajes -->
+        @for(person of listPeople; track person.name) {
+          <div class="col-12 col-sm-6 col-md-4 mb-3">
             
-            <tr *ngIf="listPeople.length === 0">
-              <td colspan="2">No se encontraron personajes en la lista</td>
-            </tr>}
-          </tbody>
-        </table>
+              <img [src]="'https://starwars-visualguide.com/assets/img/characters/' + person.url.split('/')[person.url.split('/').length - 2] + '.jpg'" class="card-img-top" alt="{{person.name}}">
+           
+                <h5>{{ person.name }}</h5>
+                <p><strong>Birth Year:</strong> {{ person.birth_year }}</p>
+                <p><strong>Gender:</strong> {{ person.gender }}</p>
+                <p><strong>Height:</strong> {{ person.height }} cm</p>
+                <p><strong>Mass:</strong> {{ person.mass }} kg</p>
+                <p><strong>Hair Color:</strong> {{ person.hair_color }}</p>
+                <p><strong>Skin Color:</strong> {{ person.skin_color }}</p>
+                <p><strong>Eye Color:</strong> {{ person.eye_color }}</p>
+          
+          </div>
+        }
+        <div *ngIf="listPeople.length === 0" class="col-12">
+   
+        </div>
       </div>
     </div>
   </div>
-  
+</div>

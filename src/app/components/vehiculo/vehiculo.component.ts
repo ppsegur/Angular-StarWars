@@ -11,6 +11,11 @@ export class VehiculoComponent implements OnInit {
   listVehiculos: Vehiculo[] = [];
 
   constructor(private vehiculoService: VehiculoService) {}
+  
+  getPersonajeId(url: string): string {
+    const urlPartes = url.split('/');
+    return urlPartes[urlPartes.length - 2];
+  }
   ngOnInit() {
     this.vehiculoService.getVehiculos().subscribe(respuesta => {  this.listVehiculos = respuesta.results;
     });
